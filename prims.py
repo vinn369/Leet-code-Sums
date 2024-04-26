@@ -17,12 +17,12 @@ def prims(graph):
             mst.append((s,d,w))
             for n,weight in adj_list[d]:
                 if n not in visited_set:
-                    heapq.heappush(q,(weight,d,n))  # push the correct weight and destination
+                    heapq.heappush(q,(weight,d,n))  #push the correct weight and destination
                           
     print(mst)
     mini=0
     for ed in mst:
-        mini+=ed[2]  # sum the weights of the edges
+        mini+=ed[2]  #sum the weights of the edges
     print(mini)
     
 graph = {
